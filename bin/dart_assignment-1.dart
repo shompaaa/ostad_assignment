@@ -3,7 +3,7 @@ abstract class Role{
 }
 
 //Person class creation
-class Person{
+class Person implements Role{
   String name;
   int age;
   String address;
@@ -15,6 +15,10 @@ class Person{
   String getName() => name;
   int getAge() => age;
   String getAddress() => address;
+
+  @override
+  void displayRole() {
+  }
 
 }
 
